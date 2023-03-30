@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Title from './Title';
+import Description from './Description';
+import image from './images/mart.jpg';
+import Image from './Image';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className='image' src={image} alt="" />
+      <div>
+      <Title name="Profile" />
+   <Description name='Gabriel Martinelli, is a Brazilian professional footballer who plays for Arsenal and the Brazil national team.Martinelli began his senior club career playing for Ituano and signed for Arsenal in July He made his senior debut in 2022. ' />
+   </div>
     </div>
   );
 }
